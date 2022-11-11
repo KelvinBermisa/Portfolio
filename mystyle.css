@@ -1,0 +1,7 @@
+html,body{
+    background: linear-gradient(to right top, #74d16b, #3dd8ac, #44dadb, #83d7f0, #b8d3ec, #bfd5ee, #c5d7ef, #cbd9f0, #b0e0ff, #87e9ff, #52f1ff, #20f8ea);
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100%;
+
+}

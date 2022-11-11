@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Functions</title>
+            <link rel="stylesheet" href="mystyle.css">
+        </head>
+        <style>
+            h1{
+                display:inline;
+            }
+        </style>
+    <body>
+    <h1>First Periodical Exam</h1>
+    <h2>Functions:</h2><br>
+    <h1>What noise does a <h1 id="animal">___</h1> <h1>make?</h1>
+    <h2 id="sound"></h2>
+    <button onclick="dogSound();"> What sound does a DOG | dogSound();do</button><br/><br/>
+    <audio id="dogWoof">
+        <source src ="Bark.ogg" type="audio/ogg">
+        <source src ="Bark.mp3" type="audio/mp3">
+    </audio>
+    <button onclick="catSound();"> What sound does a CAT do | catSound();</button><br/><br/>
+    <audio id="catMeow">
+        <source src ="Meow.ogg" type="audio/ogg">
+        <source src ="Meow.mp3" type="audio/mp3">
+    </audio>
+    <button onclick="birdSound();"> What sound does a BIRD do | birdSound();</button><br/><br/>
+    <audio id="birdChirp">
+        <source src ="Chirp.ogg" type="audio/ogg">
+        <source src ="Chirp.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var dog = document.getElementById("dogWoof");
+        var cat = document.getElementById("catMeow");
+        var bird = document.getElementById("birdChirp");
+        function dogSound(){
+            dog.play();
+            document.getElementById("animal").innerHTML ="DOG";
+        }
+        function catSound(){
+            cat.play();
+            document.getElementById("animal").innerHTML ="CAT";
+        }
+        function birdSound(){
+            bird.play();
+            document.getElementById("animal").innerHTML ="BIRD";
+        }
+        document.getElementById("demo").innerHTML = "The result of X:"+x+" + The result of Y:"+y+" = <h3>The sum is: " + z;
+    </script>
+    </body>
+</html>

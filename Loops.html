@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Loops</title>
+            <link rel="stylesheet" href="mystyle.css">
+        </head>
+    <body>
+    <h1>First Periodical Exam</h1>
+    <h2>Loops</h2>
+    
+    <p id="demo"></p>
+    <script>
+        alert("Exponents: Input the first number, and second number raised to the first number!");
+        var x = prompt("Enter first number x:");
+        var y = prompt("Enter a number that will be raised for "+x+":");
+        var result = x;
+        for(a=1;a<y;a++){
+            if(a==1){
+                document.write("Processes: of"+x+"^"+y+" ("+x+"x"+x+")<br>");
+            }
+             result = result*x;
+             document.write(result+"<br>");
+        }
+        
+        document.getElementById("demo").innerHTML = x+"^"+y+" is equals to "+result;
+    </script>
+    </body>
+</html>
